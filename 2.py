@@ -33,7 +33,13 @@ for each in arr_total:
     if mes == mes_atual:
         arr_niver.append(each)
 
-#Arrays adicionados, printando
+#Abrindo arquivo
+f2 = open("aniversariantes_do_mes.txt", "w")
+
+#Arrays adicionados, printando e escrevendo no arquivo
 for each in arr_niver:
     print(each[0],',',each[1],',',each[2])
-    
+    f2.write(str(each[0]+','+each[1]+','+each[2]))
+
+
+
